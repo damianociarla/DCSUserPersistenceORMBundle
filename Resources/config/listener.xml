@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="dcs_user.persistence.orm.listener.dcs_user_core.class">DCS\User\Persistence\ORMBundle\EventListener\DCSUserCoreEventListener</parameter>
+    </parameters>
+
+    <services>
+        <service id="dcs_user.persistence.orm.listener.dcs_user_core" class="%dcs_user.persistence.orm.listener.dcs_user_core.class%">
+            <argument type="service" id="dcs_user.persistence.orm.manager.save" />
+            <argument type="service" id="dcs_user.persistence.orm.manager.delete" />
+            <tag name="kernel.event_subscriber" />
+        </service>
+    </services>
+</container>
