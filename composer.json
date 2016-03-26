@@ -2,13 +2,21 @@
   "name": "dcs/user-persistence-orm-bundle",
   "type": "symfony-bundle",
   "description": "The DCSUserPersistenceORMBundle adds functionality to DCSUserCoreBundle and provides the implementation of the persistence on database using Doctrine ORM",
+  "keywords": ["User management","ORM","Doctrine"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Damiano Ciarla",
+      "email": "damiano.ciarla@gmail.org"
+    }
+  ],
   "require": {
     "php": ">=5.3.9",
-    "doctrine/orm": "^2.5",
-    "dcs/user-core-bundle": "1.0.x-dev"
+    "doctrine/orm": "^2.5"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5"
+    "phpunit/phpunit": "^5",
+    "dcs/user-core-bundle": "~1.0@dev"
   },
   "autoload": {
     "psr-4": {
