@@ -91,7 +91,7 @@ You must provide a concrete User class. You must extend the abstract model `DCS\
 ##### Xml
 
 	<?xml version="1.0" encoding="utf-8"?>
-	<!-- src/AppBundle/Resources/config/doctrine/User.orm.xml -->
+	<!-- src/AcmeBundle/Resources/config/doctrine/User.orm.xml -->
 	<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
 	                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
