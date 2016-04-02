@@ -2,7 +2,7 @@
 
 The **DCSUserPersistenceORMBundle** provides the final implementation of the persistence through *DoctrineORM*.
 
-To do that this bundle will listen to two particular events emitted by *Save* and *Delete* methods of the [DCSUserCoreBundle](https://github.com/damianociarla/DCSUserCoreBundle). The idea at the basis of related packages to *DCS* is to add functionality through listening of the emitted events.
+To do that this bundle will listen to two particular events emitted by *Save* and *Delete* methods of the [DCSUserCoreBundle](https://github.com/damianociarla/DCSUserCoreBundle). The idea at the basis of related packages to *DCS* is to add functionality listening to emitted events.
 
 This bundle provides the implementation of the repository service and performs a mapping of the [User](https://github.com/damianociarla/DCSUserCoreBundle/blob/master/src/Model/User.php) class.
 
@@ -50,7 +50,7 @@ Enable the bundle in the kernel:
 
 ### Create your User class
 
-You must provide a concrete User class. You must extend the abstract model `DCS\User\CoreBundle\Model\User` provided by the [DCSUserCoreBundle](https://github.com/damianociarla/DCSUserCoreBundle) and creating the appropriate mapping.
+You must provide a concrete User class. You must extend the abstract model `DCS\User\CoreBundle\Model\User` provided by the [DCSUserCoreBundle](https://github.com/damianociarla/DCSUserCoreBundle) and create the appropriate mapping.
 
 ##### Annotations
 
@@ -74,6 +74,8 @@ You must provide a concrete User class. You must extend the abstract model `DCS\
          * @ORM\GeneratedValue(strategy="AUTO")
          */
         protected $id;
+        
+        
     }
 
 ##### Yaml
