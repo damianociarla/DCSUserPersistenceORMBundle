@@ -15,8 +15,8 @@ class DeleteTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->user = $this->getMock('DCS\User\CoreBundle\Model\UserInterface');
-        $this->entityManager = $this->getMock('Doctrine\ORM\EntityManagerInterface');
+        $this->user = $this->createMock('DCS\User\CoreBundle\Model\UserInterface');
+        $this->entityManager = $this->createMock('Doctrine\ORM\EntityManagerInterface');
         $this->delete = new Delete($this->entityManager);
     }
 
