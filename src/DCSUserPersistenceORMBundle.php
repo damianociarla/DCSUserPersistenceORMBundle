@@ -12,20 +12,10 @@ class DCSUserPersistenceORMBundle extends Bundle
     {
         parent::build($container);
 
-        if (!class_exists('Doctrine\ORM\Version')) {
-            return;
-        }
+        $mappingNamespaces = [
+            realpath(__DIR__ . '/Resources/config/doctrine-core') => 'DCS\User\CoreBundle\Model',
+        ];
 
-        $ormCompilerClass = 'Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass';
-
-        if (!class_exists($ormCompilerClass)) {
-            return;
-        }
-
-        $container->addCompilerPass(
-            DoctrineOrmMappingsPass::createXmlMappingDriver([
-                realpath(__DIR__ . '/Resources/config/doctrine-core') => 'DCS\User\CoreBundle\Model',
-            ])
-        );
+        $container->addCompilerPass(DoctrineOrmMappingsPass::createXmlMappingDriver($mappingNamespaces));
     }
 }
