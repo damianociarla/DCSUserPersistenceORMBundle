@@ -74,8 +74,6 @@ You must provide a concrete User class. You must extend the abstract model `DCS\
          * @ORM\GeneratedValue(strategy="AUTO")
          */
         protected $id;
-        
-        
     }
 
 ##### Yaml
