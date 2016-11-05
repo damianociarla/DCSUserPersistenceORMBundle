@@ -5,10 +5,9 @@ namespace DCS\User\Persistence\ORMBundle\Tests\EventListener;
 use DCS\User\CoreBundle\DCSUserCoreEvents;
 use DCS\User\CoreBundle\Event\UserEvent;
 use DCS\User\CoreBundle\Model\UserInterface;
-use DCS\User\Persistence\ORMBundle\DCSUserPersistenceORMEvents;
 use DCS\User\Persistence\ORMBundle\EventListener\DCSUserCoreEventListener;
-use DCS\User\Persistence\ORMBundle\Manager\Save;
 use DCS\User\Persistence\ORMBundle\Manager\Delete;
+use DCS\User\Persistence\ORMBundle\Manager\Save;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class DCSUserCoreEventListenerTest extends \PHPUnit_Framework_TestCase

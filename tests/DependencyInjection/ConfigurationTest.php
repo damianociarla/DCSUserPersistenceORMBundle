@@ -4,8 +4,8 @@ namespace DCS\User\Persistence\ORMBundle\Tests\DependencyInjection;
 
 use DCS\User\Persistence\ORMBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\ArrayNode;
-use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\ScalarNode;
 
 class ConfigurationTest extends \PHPUnit_Framework_TestCase
