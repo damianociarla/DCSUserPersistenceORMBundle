@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/damianociarla/DCSUserPersistenceORMBundle.svg?branch=master)](https://travis-ci.org/damianociarla/DCSUserPersistenceORMBundle) 
+[![Coverage Status](https://coveralls.io/repos/github/damianociarla/DCSUserPersistenceORMBundle/badge.svg?branch=master)](https://coveralls.io/github/damianociarla/DCSUserPersistenceORMBundle?branch=master)
+
 # DCSUserPersistenceORMBundle
 
 The **DCSUserPersistenceORMBundle** provides the final implementation of the persistence through *DoctrineORM*.
